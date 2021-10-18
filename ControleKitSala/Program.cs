@@ -17,7 +17,7 @@ namespace ControleKitSala
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaFuncionarioPesquisaCodigo());
+            Application.Run(new Menu());
         }
     }
 }

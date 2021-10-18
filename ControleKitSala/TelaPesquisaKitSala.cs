@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ControleKitSala
 {
-    public partial class TelaPrincipal : Form
+    public partial class TelaPesquisaKitSala : Form
     {
-        public TelaPrincipal()
+        public TelaPesquisaKitSala()
         {
             InitializeComponent();
         }

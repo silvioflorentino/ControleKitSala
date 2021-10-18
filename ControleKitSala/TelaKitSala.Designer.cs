@@ -32,145 +32,160 @@ namespace ControleKitSala
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbKitSala = new System.Windows.Forms.TextBox();
+            this.checkBoxConAr = new System.Windows.Forms.CheckBox();
+            this.checkBoxConData = new System.Windows.Forms.CheckBox();
+            this.checkBoxApagador = new System.Windows.Forms.CheckBox();
+            this.checkBoxChave = new System.Windows.Forms.CheckBox();
+            this.checkBoxAzul = new System.Windows.Forms.CheckBox();
+            this.checkBoxPreto = new System.Windows.Forms.CheckBox();
+            this.btnSalvarKitSala = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(208, 22);
+            this.label1.Location = new System.Drawing.Point(283, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 32);
+            this.label1.Size = new System.Drawing.Size(380, 48);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cadastro de Salas";
+            this.label1.Text = "Cadastro de Kits Salas";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(159, 104);
+            this.label2.Location = new System.Drawing.Point(227, 173);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 21);
+            this.label2.Size = new System.Drawing.Size(102, 32);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Sala:";
+            this.label2.Text = "Kit Sala:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(46, 157);
+            this.label3.Location = new System.Drawing.Point(66, 262);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 21);
+            this.label3.Size = new System.Drawing.Size(73, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Itens:";
             // 
-            // textBox1
+            // tbKitSala
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
+            this.tbKitSala.Location = new System.Drawing.Point(337, 176);
+            this.tbKitSala.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbKitSala.Name = "tbKitSala";
+            this.tbKitSala.Size = new System.Drawing.Size(141, 31);
+            this.tbKitSala.TabIndex = 3;
             // 
-            // checkBox1
+            // checkBoxConAr
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(60, 207);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(278, 29);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Controle do Ar Condicionado";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxConAr.AutoSize = true;
+            this.checkBoxConAr.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxConAr.Location = new System.Drawing.Point(86, 345);
+            this.checkBoxConAr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBoxConAr.Name = "checkBoxConAr";
+            this.checkBoxConAr.Size = new System.Drawing.Size(417, 44);
+            this.checkBoxConAr.TabIndex = 4;
+            this.checkBoxConAr.Text = "Controle do Ar Condicionado";
+            this.checkBoxConAr.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBoxConData
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(60, 242);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(221, 29);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Controle do DataShow";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxConData.AutoSize = true;
+            this.checkBoxConData.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxConData.Location = new System.Drawing.Point(86, 403);
+            this.checkBoxConData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBoxConData.Name = "checkBoxConData";
+            this.checkBoxConData.Size = new System.Drawing.Size(332, 44);
+            this.checkBoxConData.TabIndex = 5;
+            this.checkBoxConData.Text = "Controle do DataShow";
+            this.checkBoxConData.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBoxApagador
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox3.Location = new System.Drawing.Point(60, 280);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(248, 29);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Apagador da lousa digital";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxApagador.AutoSize = true;
+            this.checkBoxApagador.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxApagador.Location = new System.Drawing.Point(86, 467);
+            this.checkBoxApagador.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBoxApagador.Name = "checkBoxApagador";
+            this.checkBoxApagador.Size = new System.Drawing.Size(373, 44);
+            this.checkBoxApagador.TabIndex = 6;
+            this.checkBoxApagador.Text = "Apagador da lousa digital";
+            this.checkBoxApagador.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkBoxChave
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox4.Location = new System.Drawing.Point(361, 207);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(149, 29);
-            this.checkBox4.TabIndex = 7;
-            this.checkBox4.Text = "Chave da Sala";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxChave.AutoSize = true;
+            this.checkBoxChave.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxChave.Location = new System.Drawing.Point(516, 345);
+            this.checkBoxChave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBoxChave.Name = "checkBoxChave";
+            this.checkBoxChave.Size = new System.Drawing.Size(221, 44);
+            this.checkBoxChave.TabIndex = 7;
+            this.checkBoxChave.Text = "Chave da Sala";
+            this.checkBoxChave.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkBoxAzul
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox5.Location = new System.Drawing.Point(361, 242);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(203, 29);
-            this.checkBox5.TabIndex = 8;
-            this.checkBox5.Text = "Canetão Digital Azul";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxAzul.AutoSize = true;
+            this.checkBoxAzul.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxAzul.Location = new System.Drawing.Point(516, 403);
+            this.checkBoxAzul.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBoxAzul.Name = "checkBoxAzul";
+            this.checkBoxAzul.Size = new System.Drawing.Size(303, 44);
+            this.checkBoxAzul.TabIndex = 8;
+            this.checkBoxAzul.Text = "Canetão Digital Azul";
+            this.checkBoxAzul.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // checkBoxPreto
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox6.Location = new System.Drawing.Point(361, 280);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(211, 29);
-            this.checkBox6.TabIndex = 9;
-            this.checkBox6.Text = "Canetão Digital Preto";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxPreto.AutoSize = true;
+            this.checkBoxPreto.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxPreto.Location = new System.Drawing.Point(516, 467);
+            this.checkBoxPreto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBoxPreto.Name = "checkBoxPreto";
+            this.checkBoxPreto.Size = new System.Drawing.Size(316, 44);
+            this.checkBoxPreto.TabIndex = 9;
+            this.checkBoxPreto.Text = "Canetão Digital Preto";
+            this.checkBoxPreto.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnSalvarKitSala
             // 
-            this.button1.Location = new System.Drawing.Point(493, 359);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalvarKitSala.Location = new System.Drawing.Point(704, 598);
+            this.btnSalvarKitSala.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSalvarKitSala.Name = "btnSalvarKitSala";
+            this.btnSalvarKitSala.Size = new System.Drawing.Size(107, 38);
+            this.btnSalvarKitSala.TabIndex = 10;
+            this.btnSalvarKitSala.Text = "Salvar";
+            this.btnSalvarKitSala.UseVisualStyleBackColor = true;
+            this.btnSalvarKitSala.Click += new System.EventHandler(this.btnSalvarKitSala_Click);
             // 
             // TelaKitSala
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 407);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(941, 678);
+            this.Controls.Add(this.btnSalvarKitSala);
+            this.Controls.Add(this.checkBoxPreto);
+            this.Controls.Add(this.checkBoxAzul);
+            this.Controls.Add(this.checkBoxChave);
+            this.Controls.Add(this.checkBoxApagador);
+            this.Controls.Add(this.checkBoxConData);
+            this.Controls.Add(this.checkBoxConAr);
+            this.Controls.Add(this.tbKitSala);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TelaKitSala";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro dos Kit Salas";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,13 +197,13 @@ namespace ControleKitSala
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbKitSala;
+        private System.Windows.Forms.CheckBox checkBoxConAr;
+        private System.Windows.Forms.CheckBox checkBoxConData;
+        private System.Windows.Forms.CheckBox checkBoxApagador;
+        private System.Windows.Forms.CheckBox checkBoxChave;
+        private System.Windows.Forms.CheckBox checkBoxAzul;
+        private System.Windows.Forms.CheckBox checkBoxPreto;
+        private System.Windows.Forms.Button btnSalvarKitSala;
     }
 }

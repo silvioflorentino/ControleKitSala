@@ -105,5 +105,37 @@ namespace ControleKitSala
             btnAlterar.Enabled = false;
             btnExcluir.Enabled = false;
         }
+
+        private void btnPesqTodosFun_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexao = new SqlConnection(Conexao.conectar());
+            SqlCommand comandos = new SqlCommand("pBuscaTudoFuncionario", conexao);
+            comandos.CommandType = CommandType.StoredProcedure;
+
+            conexao.Open();
+            comandos.ExecuteNonQuery();
+
+            SqlDataAdapter info = new SqlDataAdapter(comandos);
+            DataTable table = new DataTable();
+            info.Fill(table);
+
+            BindingSource dados = new BindingSource();
+
+            dados.DataSource = table;
+
+            dataGridViewFuncionario.DataSource = dados;
+            dataGridViewFuncionario.Columns[0].Visible = false;
+            dataGridViewFuncionario.Columns[1].Visible = false;
+            dataGridViewFuncionario.Columns[2].Visible = false;
+            dataGridViewFuncionario.Columns[3].Visible = false;
+            dataGridViewFuncionario.Columns[4].HeaderCell.Value="Código";
+            dataGridViewFuncionario.Columns[5].HeaderCell.Value = "Nome";
+            dataGridViewFuncionario.Columns[6].HeaderCell.Value = "E-mail";
+            dataGridViewFuncionario.Columns[7].HeaderCell.Value = "Chapa";
+
+
+
+        }
+
     }
 }
