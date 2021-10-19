@@ -29,9 +29,22 @@ namespace ControleKitSala
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPesquisaKitSala));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridViewKitSala = new System.Windows.Forms.DataGridView();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.controleAr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.controleDataShow = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPesqTodosKitSala = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbCodigoKitSala = new System.Windows.Forms.TextBox();
+            this.btnBuscaKitSala = new System.Windows.Forms.Button();
             this.checkBoxPreto = new System.Windows.Forms.CheckBox();
             this.checkBoxAzul = new System.Windows.Forms.CheckBox();
             this.checkBoxChave = new System.Windows.Forms.CheckBox();
@@ -41,15 +54,11 @@ namespace ControleKitSala
             this.tbkitSala = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbCodigoKitSala = new System.Windows.Forms.TextBox();
-            this.btnBuscaKitSala = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKitSala)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -59,23 +68,82 @@ namespace ControleKitSala
             this.tabControl1.Location = new System.Drawing.Point(36, 95);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(795, 475);
+            this.tabControl1.Size = new System.Drawing.Size(804, 527);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.dataGridViewKitSala);
+            this.tabPage1.Controls.Add(this.btnPesqTodosKitSala);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(787, 437);
+            this.tabPage1.Size = new System.Drawing.Size(796, 489);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pesquisa Tudo";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewKitSala
+            // 
+            this.dataGridViewKitSala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewKitSala.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewKitSala.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo,
+            this.sala,
+            this.controleAr,
+            this.controleDataShow,
+            this.chave});
+            this.dataGridViewKitSala.Location = new System.Drawing.Point(3, 132);
+            this.dataGridViewKitSala.Name = "dataGridViewKitSala";
+            this.dataGridViewKitSala.RowHeadersWidth = 62;
+            this.dataGridViewKitSala.RowTemplate.Height = 33;
+            this.dataGridViewKitSala.Size = new System.Drawing.Size(790, 354);
+            this.dataGridViewKitSala.TabIndex = 1;
+            // 
+            // codigo
+            // 
+            this.codigo.HeaderText = "Código";
+            this.codigo.MinimumWidth = 8;
+            this.codigo.Name = "codigo";
+            // 
+            // sala
+            // 
+            this.sala.HeaderText = "Sala";
+            this.sala.MinimumWidth = 8;
+            this.sala.Name = "sala";
+            // 
+            // controleAr
+            // 
+            this.controleAr.HeaderText = "Controle Ar";
+            this.controleAr.MinimumWidth = 8;
+            this.controleAr.Name = "controleAr";
+            // 
+            // controleDataShow
+            // 
+            this.controleDataShow.HeaderText = "Controle DataShow";
+            this.controleDataShow.MinimumWidth = 8;
+            this.controleDataShow.Name = "controleDataShow";
+            // 
+            // chave
+            // 
+            this.chave.HeaderText = "Chave";
+            this.chave.MinimumWidth = 8;
+            this.chave.Name = "chave";
+            // 
+            // btnPesqTodosKitSala
+            // 
+            this.btnPesqTodosKitSala.Location = new System.Drawing.Point(233, 35);
+            this.btnPesqTodosKitSala.Name = "btnPesqTodosKitSala";
+            this.btnPesqTodosKitSala.Size = new System.Drawing.Size(303, 58);
+            this.btnPesqTodosKitSala.TabIndex = 0;
+            this.btnPesqTodosKitSala.Text = "Pesquisar Todos os Kit Salas";
+            this.btnPesqTodosKitSala.UseVisualStyleBackColor = true;
+            this.btnPesqTodosKitSala.Click += new System.EventHandler(this.btnPesqTodosKitSala_Click);
+            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnAlterar);
+            this.tabPage2.Controls.Add(this.btnExcluir);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.tbCodigoKitSala);
             this.tabPage2.Controls.Add(this.btnBuscaKitSala);
@@ -91,10 +159,65 @@ namespace ControleKitSala
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(787, 437);
+            this.tabPage2.Size = new System.Drawing.Size(796, 489);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pesquisa por Código";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlterar.BackgroundImage")));
+            this.btnAlterar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlterar.Location = new System.Drawing.Point(606, 418);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(66, 65);
+            this.btnAlterar.TabIndex = 23;
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExcluir.BackgroundImage")));
+            this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExcluir.Location = new System.Drawing.Point(687, 418);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(67, 65);
+            this.btnExcluir.TabIndex = 22;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(48, 78);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(323, 32);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Digite o Código do Kit Sala";
+            // 
+            // tbCodigoKitSala
+            // 
+            this.tbCodigoKitSala.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbCodigoKitSala.Location = new System.Drawing.Point(400, 77);
+            this.tbCodigoKitSala.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCodigoKitSala.Name = "tbCodigoKitSala";
+            this.tbCodigoKitSala.Size = new System.Drawing.Size(148, 36);
+            this.tbCodigoKitSala.TabIndex = 20;
+            this.tbCodigoKitSala.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnBuscaKitSala
+            // 
+            this.btnBuscaKitSala.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscaKitSala.BackgroundImage")));
+            this.btnBuscaKitSala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscaKitSala.Location = new System.Drawing.Point(583, 50);
+            this.btnBuscaKitSala.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscaKitSala.Name = "btnBuscaKitSala";
+            this.btnBuscaKitSala.Size = new System.Drawing.Size(99, 92);
+            this.btnBuscaKitSala.TabIndex = 21;
+            this.btnBuscaKitSala.UseVisualStyleBackColor = true;
+            this.btnBuscaKitSala.Click += new System.EventHandler(this.btnBuscaKitSala_Click);
             // 
             // checkBoxPreto
             // 
@@ -198,70 +321,32 @@ namespace ControleKitSala
             this.label2.TabIndex = 10;
             this.label2.Text = "Kit Sala:";
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(48, 78);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 32);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Digite o Kit Sala";
-            // 
-            // tbCodigoKitSala
-            // 
-            this.tbCodigoKitSala.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tbCodigoKitSala.Location = new System.Drawing.Point(271, 78);
-            this.tbCodigoKitSala.Margin = new System.Windows.Forms.Padding(4);
-            this.tbCodigoKitSala.Name = "tbCodigoKitSala";
-            this.tbCodigoKitSala.Size = new System.Drawing.Size(148, 36);
-            this.tbCodigoKitSala.TabIndex = 20;
-            this.tbCodigoKitSala.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnBuscaKitSala
-            // 
-            this.btnBuscaKitSala.Location = new System.Drawing.Point(445, 78);
-            this.btnBuscaKitSala.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscaKitSala.Name = "btnBuscaKitSala";
-            this.btnBuscaKitSala.Size = new System.Drawing.Size(118, 36);
-            this.btnBuscaKitSala.TabIndex = 21;
-            this.btnBuscaKitSala.Text = "Pesquisar";
-            this.btnBuscaKitSala.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(245, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 53);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 152);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(718, 225);
-            this.dataGridView1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(299, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(316, 45);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Pesquisa de Kit Sala";
             // 
             // TelaPesquisaKitSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 619);
+            this.ClientSize = new System.Drawing.Size(912, 634);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Name = "TelaPesquisaKitSala";
             this.Text = "TelaPesquisaKitSala";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKitSala)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -282,7 +367,15 @@ namespace ControleKitSala
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbCodigoKitSala;
         private System.Windows.Forms.Button btnBuscaKitSala;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridViewKitSala;
+        private System.Windows.Forms.Button btnPesqTodosKitSala;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn controleAr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn controleDataShow;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chave;
     }
 }

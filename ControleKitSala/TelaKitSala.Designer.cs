@@ -46,7 +46,7 @@ namespace ControleKitSala
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(283, 36);
+            this.label1.Location = new System.Drawing.Point(179, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(380, 48);
@@ -57,7 +57,7 @@ namespace ControleKitSala
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(227, 173);
+            this.label2.Location = new System.Drawing.Point(221, 131);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 32);
@@ -68,7 +68,7 @@ namespace ControleKitSala
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(66, 262);
+            this.label3.Location = new System.Drawing.Point(21, 184);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 32);
@@ -77,7 +77,7 @@ namespace ControleKitSala
             // 
             // tbKitSala
             // 
-            this.tbKitSala.Location = new System.Drawing.Point(337, 176);
+            this.tbKitSala.Location = new System.Drawing.Point(331, 134);
             this.tbKitSala.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbKitSala.Name = "tbKitSala";
             this.tbKitSala.Size = new System.Drawing.Size(141, 31);
@@ -87,7 +87,7 @@ namespace ControleKitSala
             // 
             this.checkBoxConAr.AutoSize = true;
             this.checkBoxConAr.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxConAr.Location = new System.Drawing.Point(86, 345);
+            this.checkBoxConAr.Location = new System.Drawing.Point(41, 267);
             this.checkBoxConAr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxConAr.Name = "checkBoxConAr";
             this.checkBoxConAr.Size = new System.Drawing.Size(417, 44);
@@ -99,7 +99,7 @@ namespace ControleKitSala
             // 
             this.checkBoxConData.AutoSize = true;
             this.checkBoxConData.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxConData.Location = new System.Drawing.Point(86, 403);
+            this.checkBoxConData.Location = new System.Drawing.Point(41, 325);
             this.checkBoxConData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxConData.Name = "checkBoxConData";
             this.checkBoxConData.Size = new System.Drawing.Size(332, 44);
@@ -111,7 +111,7 @@ namespace ControleKitSala
             // 
             this.checkBoxApagador.AutoSize = true;
             this.checkBoxApagador.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxApagador.Location = new System.Drawing.Point(86, 467);
+            this.checkBoxApagador.Location = new System.Drawing.Point(41, 389);
             this.checkBoxApagador.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxApagador.Name = "checkBoxApagador";
             this.checkBoxApagador.Size = new System.Drawing.Size(373, 44);
@@ -123,7 +123,7 @@ namespace ControleKitSala
             // 
             this.checkBoxChave.AutoSize = true;
             this.checkBoxChave.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxChave.Location = new System.Drawing.Point(516, 345);
+            this.checkBoxChave.Location = new System.Drawing.Point(471, 267);
             this.checkBoxChave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxChave.Name = "checkBoxChave";
             this.checkBoxChave.Size = new System.Drawing.Size(221, 44);
@@ -135,7 +135,7 @@ namespace ControleKitSala
             // 
             this.checkBoxAzul.AutoSize = true;
             this.checkBoxAzul.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxAzul.Location = new System.Drawing.Point(516, 403);
+            this.checkBoxAzul.Location = new System.Drawing.Point(471, 325);
             this.checkBoxAzul.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxAzul.Name = "checkBoxAzul";
             this.checkBoxAzul.Size = new System.Drawing.Size(303, 44);
@@ -147,7 +147,7 @@ namespace ControleKitSala
             // 
             this.checkBoxPreto.AutoSize = true;
             this.checkBoxPreto.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxPreto.Location = new System.Drawing.Point(516, 467);
+            this.checkBoxPreto.Location = new System.Drawing.Point(471, 389);
             this.checkBoxPreto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxPreto.Name = "checkBoxPreto";
             this.checkBoxPreto.Size = new System.Drawing.Size(316, 44);
@@ -157,7 +157,7 @@ namespace ControleKitSala
             // 
             // btnSalvarKitSala
             // 
-            this.btnSalvarKitSala.Location = new System.Drawing.Point(704, 598);
+            this.btnSalvarKitSala.Location = new System.Drawing.Point(667, 505);
             this.btnSalvarKitSala.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalvarKitSala.Name = "btnSalvarKitSala";
             this.btnSalvarKitSala.Size = new System.Drawing.Size(107, 38);
@@ -170,7 +170,7 @@ namespace ControleKitSala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 678);
+            this.ClientSize = new System.Drawing.Size(825, 579);
             this.Controls.Add(this.btnSalvarKitSala);
             this.Controls.Add(this.checkBoxPreto);
             this.Controls.Add(this.checkBoxAzul);

@@ -23,25 +23,49 @@ namespace ControleKitSala
             SqlConnection conexao = new SqlConnection(Conexao.conectar());
             SqlCommand comando = new SqlCommand("pCadastrarKitSala", conexao);
             comando.CommandType = CommandType.StoredProcedure;
-            MessageBox.Show(checkBoxApagador.Enabled.ToString());
+            
             try
             {
                 byte apagador = 0;
+                byte controleAr = 0;
+                byte controleDataShow = 0;
+                byte chave = 0;
+                byte canetaoAzul = 0;
+                byte canetaoPreto = 0;
 
-                if(checkBoxApagador.Checked == true)
+                if (checkBoxApagador.Checked == true)
                 {
                     apagador = 1;
                 }
+                if(checkBoxConAr.Checked == true)
+                {
+                    controleAr = 1;
+                }
+                if (checkBoxConData.Checked == true)
+                {
+                    controleDataShow = 1;
+                }
+                if (checkBoxChave.Checked == true)
+                {
+                    chave = 1;
+                }
+                if ( checkBoxAzul.Checked == true)
+                {
+                    canetaoAzul = 1;
+                }
+                if (checkBoxPreto.Checked == true)
+                {
+                    canetaoPreto = 1;
+                }
 
-                MessageBox.Show(apagador.ToString());
-
+                
                 comando.Parameters.AddWithValue("@sala", tbKitSala.Text);
-                comando.Parameters.AddWithValue("@controleAr", checkBoxConAr.Text);
-                comando.Parameters.AddWithValue("@controleDataShow", checkBoxConData.Text);
+                comando.Parameters.AddWithValue("@controleAr", controleAr);
+                comando.Parameters.AddWithValue("@controleDataShow", controleDataShow);
                 comando.Parameters.AddWithValue("@apagador", apagador);
-                comando.Parameters.AddWithValue("@chave", checkBoxChave.Text);
-                comando.Parameters.AddWithValue("@canetaoAzul", checkBoxAzul.Text);
-                comando.Parameters.AddWithValue("@canetaoPreto", checkBoxPreto.Text);
+                comando.Parameters.AddWithValue("@chave", chave);
+                comando.Parameters.AddWithValue("@canetaoAzul", canetaoAzul);
+                comando.Parameters.AddWithValue("@canetaoPreto", canetaoPreto);
 
 
                 SqlParameter codigo = comando.Parameters.Add("@codigo", SqlDbType.Int);
@@ -50,14 +74,19 @@ namespace ControleKitSala
                 conexao.Open();
                 comando.ExecuteNonQuery();
 
-                var resposta = MessageBox.Show("Kit Sala cadastrado com sucesso. ," +
+                var resposta = MessageBox.Show("Kit Sala cadastrado com sucesso." +
                     "Deseja cadastrar outro Kit Sala?",
                     "Novo Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (resposta == DialogResult.Yes)
                 {
                     tbKitSala.Clear();
-              
+                    checkBoxChave.Checked = false;
+                    checkBoxApagador.Checked = false;
+                    checkBoxAzul.Checked = false;
+                    checkBoxConAr.Checked = false;
+                    checkBoxConData.Checked = false;
+                    checkBoxPreto.Checked = false;              
                 }
                 else
                 {

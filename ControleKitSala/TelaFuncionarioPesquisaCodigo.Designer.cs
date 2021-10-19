@@ -51,8 +51,8 @@ namespace ControleKitSala
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFuncionario)).BeginInit();
@@ -276,6 +276,7 @@ namespace ControleKitSala
             this.btnExcluir.TabIndex = 14;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -288,17 +289,6 @@ namespace ControleKitSala
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Soybeanut Free", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(221, 46);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(309, 47);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Pesquisa Funcionário";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -309,6 +299,17 @@ namespace ControleKitSala
             this.label6.Size = new System.Drawing.Size(374, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Digite o Código do Funcionário";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Soybeanut Free", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(221, 46);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(309, 47);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Pesquisa Funcionário";
             // 
             // TelaFuncionarioPesquisaCodigo
             // 

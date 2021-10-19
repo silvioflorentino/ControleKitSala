@@ -85,14 +85,14 @@ namespace ControleKitSala
             // novoToolStripMenuItem
             // 
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
             this.novoToolStripMenuItem.Text = "Novo";
             this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
             // pesquisaToolStripMenuItem
             // 
             this.pesquisaToolStripMenuItem.Name = "pesquisaToolStripMenuItem";
-            this.pesquisaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.pesquisaToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
             this.pesquisaToolStripMenuItem.Text = "Pesquisa";
             this.pesquisaToolStripMenuItem.Click += new System.EventHandler(this.pesquisaToolStripMenuItem_Click);
             // 
@@ -117,6 +117,7 @@ namespace ControleKitSala
             this.pesquisaToolStripMenuItem1.Name = "pesquisaToolStripMenuItem1";
             this.pesquisaToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
             this.pesquisaToolStripMenuItem1.Text = "Pesquisa";
+            this.pesquisaToolStripMenuItem1.Click += new System.EventHandler(this.pesquisaToolStripMenuItem1_Click);
             // 
             // controleToolStripMenuItem
             // 
@@ -130,14 +131,14 @@ namespace ControleKitSala
             // entradaToolStripMenuItem
             // 
             this.entradaToolStripMenuItem.Name = "entradaToolStripMenuItem";
-            this.entradaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.entradaToolStripMenuItem.Size = new System.Drawing.Size(188, 34);
             this.entradaToolStripMenuItem.Text = "Kit Sala";
             this.entradaToolStripMenuItem.Click += new System.EventHandler(this.entradaToolStripMenuItem_Click);
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(188, 34);
             this.pesquisarToolStripMenuItem.Text = "Pesquisar";
             // 
             // Menu

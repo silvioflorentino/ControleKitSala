@@ -45,5 +45,12 @@ namespace ControleKitSala
             TelaKitSala telaKit = new TelaKitSala();
             telaKit.Show();
         }
+
+        private void pesquisaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TelaPesquisaKitSala pesquisaKitSala = new TelaPesquisaKitSala();
+            pesquisaKitSala.Show();
+
+        }
     }
 }

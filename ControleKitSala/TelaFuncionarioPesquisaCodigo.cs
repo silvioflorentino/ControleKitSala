@@ -137,5 +137,34 @@ namespace ControleKitSala
 
         }
 
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexao = new SqlConnection(Conexao.conectar());
+            SqlCommand comandos = new SqlCommand("pDeletarFuncionario", conexao);
+            comandos.CommandType = CommandType.StoredProcedure;
+
+            try
+            {
+                comandos.Parameters.AddWithValue("@codigo", tbCodigoFun.Text);
+                conexao.Open();
+                comandos.ExecuteNonQuery();
+                MessageBox.Show("Funcionário Excluido com sucesso!");
+                tbNomeFun.Clear();
+                tbEmailFun.Clear();
+                tbChapaFun.Clear();
+
+            }
+            catch
+            {
+                MessageBox.Show("Funcionário não Excluido.");
+            }
+            finally
+            {
+                if (conexao.State != ConnectionState.Closed)
+                {
+                    conexao.Close();
+                }
+            }
+        }
     }
 }
