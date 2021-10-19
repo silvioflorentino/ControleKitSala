@@ -33,8 +33,8 @@ namespace ControleKitSala
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCodigoFun = new System.Windows.Forms.TextBox();
+            this.tbCodigoSala = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -71,8 +71,8 @@ namespace ControleKitSala
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.tbCodigoFun);
+            this.tabPage1.Controls.Add(this.tbCodigoSala);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -95,26 +95,26 @@ namespace ControleKitSala
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // tbCodigoFun
             // 
-            this.textBox2.Location = new System.Drawing.Point(234, 168);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 31);
-            this.textBox2.TabIndex = 3;
+            this.tbCodigoFun.Location = new System.Drawing.Point(236, 174);
+            this.tbCodigoFun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbCodigoFun.Name = "tbCodigoFun";
+            this.tbCodigoFun.Size = new System.Drawing.Size(141, 31);
+            this.tbCodigoFun.TabIndex = 3;
             // 
-            // textBox1
+            // tbCodigoSala
             // 
-            this.textBox1.Location = new System.Drawing.Point(173, 87);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 31);
-            this.textBox1.TabIndex = 2;
+            this.tbCodigoSala.Location = new System.Drawing.Point(173, 87);
+            this.tbCodigoSala.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbCodigoSala.Name = "tbCodigoSala";
+            this.tbCodigoSala.Size = new System.Drawing.Size(141, 31);
+            this.tbCodigoSala.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(61, 173);
+            this.label3.Location = new System.Drawing.Point(63, 179);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(172, 25);
@@ -203,8 +203,8 @@ namespace ControleKitSala
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCodigoFun;
+        private System.Windows.Forms.TextBox tbCodigoSala;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;

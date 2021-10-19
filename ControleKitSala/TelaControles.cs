@@ -19,7 +19,15 @@ namespace ControleKitSala
 
         private void button1_Click(object sender, EventArgs e)
         {
+            String codKitSala = tbCodigoSala.Text;
+            String codFun = tbCodigoFun.Text;
+            DateTime dataHora = DateTime.Now;
 
+            
+
+            MessageBox.Show("Deseja Retirar a sala:" 
+                + codKitSala + 
+                dataHora.ToString());
         }
     }
 }
